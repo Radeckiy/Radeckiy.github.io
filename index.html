@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <!--====== Title ======-->
+    <title>Radeckiy.io</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="My web-portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--====== Custom Fonts ======-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+</head>
+
+<body>
+    <!--====== ICONS PART ======-->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <!--Mail icon-->
+            <symbol id="icon-envelop" viewBox="0 0 32 32">
+                <path d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+            </symbol>
+            <!--Database icon-->
+            <symbol id="icon-database" viewBox="0 0 32 32">
+                <path d="M16 0c-8.837 0-16 2.239-16 5v4c0 2.761 7.163 5 16 5s16-2.239 16-5v-4c0-2.761-7.163-5-16-5z"></path>
+                <path d="M16 17c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+                <path d="M16 26c-8.837 0-16-2.239-16-5v6c0 2.761 7.163 5 16 5s16-2.239 16-5v-6c0 2.761-7.163 5-16 5z"></path>
+            </symbol>
+            <!--Phone icon-->
+            <symbol id="icon-phone" viewBox="0 0 32 32">
+                <path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+            </symbol>
+            <!--Telegram icon-->
+            <symbol id="icon-telegram" viewBox="0 0 32 32">
+                <path fill="#2F74D4FF" d="M16 0c-8.838 0-16 7.162-16 16s7.162 16 16 16 16-7.163 16-16-7.163-16-16-16zM23.863 10.969l-2.625 12.369c-0.181 0.881-0.712 1.087-1.45 0.681l-4-2.956-1.919 1.869c-0.225 0.219-0.4 0.4-0.8 0.4-0.519 0-0.431-0.194-0.606-0.688l-1.363-4.475-3.956-1.231c-0.856-0.262-0.862-0.85 0.194-1.269l15.412-5.95c0.7-0.319 1.381 0.169 1.113 1.25z"></path>
+            </symbol>
+            <!--VK icon-->
+            <symbol id="icon-vk" viewBox="0 0 32 32">
+                <path fill="#1759af" d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM25.919 22.4l-2.925 0.044c0 0-0.631 0.125-1.456-0.444-1.094-0.75-2.125-2.706-2.931-2.45-0.813 0.256-0.788 2.012-0.788 2.012s0.006 0.375-0.181 0.575c-0.2 0.219-0.6 0.262-0.6 0.262h-1.306c0 0-2.888 0.175-5.431-2.475-2.775-2.887-5.225-8.619-5.225-8.619s-0.144-0.375 0.013-0.556c0.175-0.206 0.644-0.219 0.644-0.219l3.131-0.019c0 0 0.294 0.050 0.506 0.206 0.175 0.125 0.269 0.369 0.269 0.369s0.506 1.281 1.175 2.438c1.306 2.256 1.919 2.75 2.362 2.513 0.644-0.35 0.45-3.194 0.45-3.194s0.012-1.031-0.325-1.488c-0.262-0.356-0.756-0.463-0.969-0.488-0.175-0.025 0.113-0.431 0.488-0.619 0.563-0.275 1.556-0.294 2.731-0.281 0.913 0.006 1.181 0.069 1.538 0.15 1.081 0.262 0.712 1.269 0.712 3.681 0 0.775-0.137 1.863 0.419 2.219 0.238 0.156 0.825 0.025 2.294-2.469 0.694-1.181 1.219-2.569 1.219-2.569s0.113-0.25 0.288-0.356c0.181-0.106 0.425-0.075 0.425-0.075l3.294-0.019c0 0 0.988-0.119 1.15 0.331 0.169 0.469-0.369 1.563-1.712 3.356-2.206 2.944-2.456 2.669-0.619 4.369 1.75 1.625 2.113 2.419 2.175 2.519 0.712 1.2-0.813 1.294-0.813 1.294z"></path>
+            </symbol>
+            <!--Github icon-->
+            <symbol id="icon-github" viewBox="0 0 32 32">
+                <path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+            </symbol>
+            <!--Assembly tool icon-->
+            <symbol id="icon-hammer" viewBox="0 0 32 32">
+                <path d="M31.562 25.905l-9.423-9.423c-0.583-0.583-1.538-0.583-2.121 0l-0.707 0.707-5.75-5.75 9.439-9.439h-10l-4.439 4.439-0.439-0.439h-2.121v2.121l0.439 0.439-6.439 6.439 5 5 6.439-6.439 5.75 5.75-0.707 0.707c-0.583 0.583-0.583 1.538 0 2.121l9.423 9.423c0.583 0.583 1.538 0.583 2.121 0l3.535-3.535c0.583-0.583 0.583-1.538 0-2.121z"></path>
+            </symbol>
+            <!--Frameworks/libs icon-->
+            <symbol id="icon-rocket" viewBox="0 0 32 32">
+                <path d="M22 2l-10 10h-6l-6 8c0 0 6.357-1.77 10.065-0.94l-10.065 12.94 13.184-10.255c1.839 4.208-1.184 10.255-1.184 10.255l8-6v-6l10-10 2-10-10 2z"></path>
+            </symbol>
+            <!--Language icon-->
+            <symbol id="icon-terminal" viewBox="0 0 32 32">
+                <path d="M0 2v28h32v-28h-32zM30 28h-28v-24h28v24zM28 6h-24v20h24v-20zM14 16h-2v2h-2v2h-2v-2h2v-2h2v-2h-2v-2h-2v-2h2v2h2v2h2v2zM22 20h-6v-2h6v2z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+   
+    <!--====== PRELOADER PART ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--====== NAVBAR PART ======-->
+    <section class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                       
+                        <a class="navbar-brand go-href" href="#home">
+                            <img src="assets/images/logo.svg" alt="Logo">
+                        </a>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#about">About Me</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#way">Working way</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#skills">Skills</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#contacts">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== WELCOME PART ======-->
+    <section id="home" class="welcome-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="welcome-content">
+                        <span class="title substrate">Привет!</span>
+                        <h1 class="title">Я - Андрей</h1>
+                        <h1 class="title">&</h1>
+                        <span class="title animated-text">I'm developer..</span>
+                        <p class="text">Если хочешь узнать обо мне подробнее, то листай ниже!</p>
+                        <ul class="welcome-btn light-rounded-buttons">
+                            <li>
+                                <a href="#about" class="main-btn light-rounded-one go-href">Или нажми меня</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== ABOUT ME PART ======-->
+    <section id="about" class="about-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">About me</h3>
+                        <p class="text">Тут я расскажу немного о себе</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-40">
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <div class="photo"></div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p class="about-text text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== WORKING WAY PART ======-->
+    <section id="way" class="way-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="section-title text-center pb-20">
+                        <h3 class="title">Working way</h3>
+                        <p class="text">Мой рабочий путь</p>
+                    </div>
+                    <img class="mx-auto d-block way-img" src="assets/images/working-way.svg" alt="Working way">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== SKILLS PART ======-->
+    <section id="skills" class="skills-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">Skills</h3>
+                        <p class="text">Мои профессиональные навыки</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-12 col-sm-12 py-5 my-border-right">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-8">
+                            <div class="text-center pb-10">
+                                <p class="skills-part-title">Языки программирования</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center pr-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Java 8 (SE, EE)</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 85%" role="progressbar">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pr-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Kotlin</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 70%" role="progressbar">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pr-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">C#</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 40%" role="progressbar">40%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center pr-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">SQL / PL SQL</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 50%" role="progressbar">50%</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center pr-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">JavaScript / TypeScript</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 60%" role="progressbar">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pr-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">HTML 5 / CSS 3</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 65%" role="progressbar">65%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 py-5">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-8">
+                            <div class="text-center pb-10">
+                                <p class="skills-part-title">Фреймворки / библиотеки</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Spring Boot Web (Web MVC, WebFlux)</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 75%" role="progressbar">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Spring Boot Data (SQL, NoSQL)</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 60%" role="progressbar">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Spring Boot Security</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 50%" role="progressbar">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Spring Boot Messaging (For Kafka, WebSocket, Integration)</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 50%" role="progressbar">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Micronaut</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 50%" role="progressbar">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Javalin</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 40%" role="progressbar">40%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pl-xl-5 pt-5">
+                        <div class="col-lg-12">
+                            <p class="progress-label">Lombok, Hibernate, Jackson, Jetty, JUnit, Mockito, Slf4j</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="progress mt-2">
+                                <div class="progress-bar" style="width: 100%; font-size: 24pt;" role="progressbar">&#x221e;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== PORTFOLIO PART ======-->
+    <section id="portfolio" class="portfolio-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="title">Portfolio</h3>
+                        <p class="text">Моё портфолио</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card-menu text-center mt-10">
+                <ul class="row justify-content-center">
+                    <li data-filter="*" class="col-lg-2 col-md-2 col-sm-10 active">ALL</li>
+                    <li data-filter=".java-project" class="col-lg-2 col-md-2 col-sm-10">JAVA</li>
+                    <li data-filter=".kotlin-project" class="col-lg-2 col-md-2 col-sm-10">KOTLIN</li>
+                    <li data-filter=".python-project" class="col-lg-2 col-md-2 col-sm-10">PYTHON</li>
+                </ul>
+            </div>
+
+            <div class="row justify-content-center grid">
+                <div class="col-lg-6 col-md-6 col-sm-12 java-project">
+                    <div class="portfolio-card-style mt-30">
+                        <div class="portfolio-card-header text-center">
+                            <h5 class="sub-title">Project one</h5>
+                        </div>
+
+                        <hr class="border-white mx-auto my-4 " />
+                        <div class="portfolio-card-about">
+                            <p class="portfolio-card-about-text">About project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem debitis dolorem et, excepturi impedit inventore maiores minus mollitia nesciunt pariatur perferendis quo repellat sint tempora voluptas. Libero, magni.</p>
+                        </div>
+                        <hr class="border-white mx-auto my-4 " />
+
+                        <div class="params-list">
+                            <ul>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-terminal"><use xlink:href="#icon-terminal"></use></svg><span class="name"></span>Kotlin</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-hammer"><use xlink:href="#icon-hammer"></use></svg><span class="name"></span>Maven</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-database"><use xlink:href="#icon-database"></use></svg><span class="name"></span>Mongo DB</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-rocket"><use xlink:href="#icon-rocket"></use></svg><span class="name"></span>Spring Boot, WEB, Security ...</li>
+                            </ul>
+                        </div>
+
+                        <div class="welcome-btn light-rounded-buttons mt-50 float-right">
+                            <a href="#" class="main-btn light-rounded-one"><i class="lni lni-lg lni-github-original mr-1"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 kotlin-project">
+                    <div class="portfolio-card-style mt-30">
+                        <div class="portfolio-card-header text-center">
+                            <h5 class="sub-title">Project two</h5>
+                        </div>
+
+                        <hr class="border-white mx-auto my-4 " />
+                        <div class="portfolio-card-about">
+                            <p class="portfolio-card-about-text">About project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem debitis dolorem et, excepturi impedit inventore maiores minus mollitia nesciunt pariatur perferendis quo repellat sint tempora voluptas. Libero, magni.</p>
+                        </div>
+                        <hr class="border-white mx-auto my-4 " />
+
+                        <div class="params-list">
+                            <ul>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-terminal"><use xlink:href="#icon-terminal"></use></svg><span class="name"></span>Kotlin</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-hammer"><use xlink:href="#icon-hammer"></use></svg><span class="name"></span>Maven</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-database"><use xlink:href="#icon-database"></use></svg><span class="name"></span>Mongo DB</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-rocket"><use xlink:href="#icon-rocket"></use></svg><span class="name"></span>Spring Boot, WEB, Security ...</li>
+                            </ul>
+                        </div>
+
+                        <div class="welcome-btn light-rounded-buttons mt-50 float-right">
+                            <a href="#" class="main-btn light-rounded-one"><i class="lni lni-lg lni-github-original mr-1"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 python-project">
+                    <div class="portfolio-card-style mt-30">
+                        <div class="portfolio-card-header text-center">
+                            <h5 class="sub-title">Project three</h5>
+                        </div>
+
+                        <hr class="border-white mx-auto my-4 " />
+                        <div class="portfolio-card-about">
+                            <p class="portfolio-card-about-text">About project Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores autem debitis dolorem et, excepturi impedit inventore maiores minus mollitia nesciunt pariatur perferendis quo repellat sint tempora voluptas. Libero, magni.</p>
+                        </div>
+                        <hr class="border-white mx-auto my-4 " />
+
+                        <div class="params-list">
+                            <ul>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-terminal"><use xlink:href="#icon-terminal"></use></svg><span class="name"></span>Kotlin</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-hammer"><use xlink:href="#icon-hammer"></use></svg><span class="name"></span>Maven</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-database"><use xlink:href="#icon-database"></use></svg><span class="name"></span>Mongo DB</li>
+                                <li><svg class="icon mb-1 ml-1 mr-3 icon-rocket"><use xlink:href="#icon-rocket"></use></svg><span class="name"></span>Spring Boot, WEB, Security ...</li>
+                            </ul>
+                        </div>
+
+                        <div class="welcome-btn light-rounded-buttons mt-50 float-right">
+                            <a href="#" class="main-btn light-rounded-one"><i class="lni lni-lg lni-github-original mr-1"></i> Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== CONTACTS ======-->
+    <section id="contacts" class="contact-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">Contacts</h3>
+                        <p class="text">Связаться со мной можно следующими способами:</p>
+                    </div> <!-- section title -->
+                </div>
+            </div>
+
+            <div class="contact-info mt-20">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-5">
+                        <div class="single-contact-info contact-color-1 d-flex">
+                            <div class="contact-info-icon">
+                                <svg class="icon icon-telegram"><use xlink:href="#icon-telegram"></use></svg>
+                            </div>
+                            <div class="contact-info-content media-body mt-15">
+                                <a href="https://teleg.run/RadeckiyIO">Click</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-5">
+                        <div class="single-contact-info contact-color-2 d-flex">
+                            <div class="contact-info-icon">
+                                <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
+                            </div>
+                            <div class="contact-info-content media-body mt-15">
+                                <a href="https://teleg.run/RadeckiyIO">Click</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-5">
+                        <div class="single-contact-info contact-color-3 d-flex">
+                            <div class="contact-info-icon">
+                                <svg class="icon icon-vk"><use xlink:href="#icon-vk"></use></svg>
+                            </div>
+                            <div class="contact-info-content media-body mt-15">
+                                <a href="https://teleg.run/RadeckiyIO">Click</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center mt-5">
+                        <div class="single-contact-info contact-color-4 d-flex">
+                            <div class="contact-info-icon">
+                                <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
+                            </div>
+                            <div class="contact-info-content media-body mt-15">
+                                <a href="https://teleg.run/RadeckiyIO">Click</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-wrapper form-style-two pt-115">
+                        <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Оставьте <span>сообщение:</span></h4>
+                        
+                        <form id="contact-form" action="assets/contact.php" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Ваше имя</label>
+                                        <div class="input-items default">
+                                            <input name="name" type="text" placeholder="Имя">
+                                            <i class="lni lni-user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-input mt-25">
+                                        <label>Ваш E-mail</label>
+                                        <div class="input-items default">
+                                            <input type="email" name="email" placeholder="E-mail">
+                                            <i class="lni lni-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-input mt-25">
+                                        <label>Сообщение</label>
+                                        <div class="input-items default">
+                                            <textarea name="massage" placeholder="Текст сообщения"></textarea>
+                                            <i class="lni lni-pencil-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="form-message"></p>
+                                <div class="col-md-12">
+                                    <div class="form-input light-rounded-buttons mt-30">
+                                        <button class="main-btn light-rounded-two">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== FOOTER ======-->
+    <section class="footer-area footer-dark">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="footer-logo text-center">
+                        <a  href="#home" class="mt-10 go-href"><img src="assets/images/logo.svg" alt="Logo"></a>
+                    </div>
+                    <ul class="social text-center mt-40">
+                        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                        <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                    </ul>
+
+                    <div class="copyright text-center mt-20">
+                        <p class="text">Designed by <strong>Radeckiy Andrey</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--====== BACK TOP TOP ======-->
+    <a href="#home" class="back-to-top go-href"><i class="lni lni-chevron-up"></i></a>
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--====== Images loaded js ======-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
