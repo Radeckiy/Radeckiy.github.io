@@ -91,4 +91,15 @@ $(function() {
         });
     });
 
+    function sendMail() {
+        let subjMsgElement = $("input[name = 'subject']");
+        let bodyMsgElement = $("textarea[name = 'message']");
+
+        window.open('mailto:radeckiy98@mail.ru?subject=' + subjMsgElement.val() + '&body=' + bodyMsgElement.val());
+
+        subjMsgElement.val('');
+        bodyMsgElement.val('');
+    }
+
+    $('.submit-btn').on('click', sendMail);
 });

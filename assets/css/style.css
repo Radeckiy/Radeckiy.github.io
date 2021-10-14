@@ -1346,7 +1346,7 @@ p {
 .skills-part-title {
     font-size: 16px;
     line-height: 25px;
-    background-color: rgba(0, 76, 130, 0.4);
+    background-color: #143454;
     color: #fff;
     border-radius: 8px;
     padding: 4px;
@@ -1461,7 +1461,7 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 .footer-area {
     background-color: #f4f6f7;
     padding-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 .footer-area .social li {
@@ -1532,6 +1532,11 @@ p.form-message.success.form-message.error, p.form-message.error.form-message.err
 
 .footer-area.footer-dark .copyright .text {
     color: #fff;
+}
+
+.icon-hh {
+    height: 32px;
+    width: 32px;
 }
 
 /*===========================
