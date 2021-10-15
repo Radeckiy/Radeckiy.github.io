@@ -1158,7 +1158,8 @@ p {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background: url("../images/photo.svg") no-repeat center;
     background-size: cover;
-    min-height: 500px;
+    min-height: 450px;
+    min-width: 400px;
     border-radius: 8px;
 }
 
